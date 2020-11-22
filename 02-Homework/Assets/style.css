@@ -1,40 +1,52 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}  
+
+header {
+    font-size: 60px;
+    text-align: right;
+    margin: 20px;
+    background-color: rgb(22, 66, 209);
+    padding: 10px 50px;
+    color: #ffffff;
+    
+}
 
 body {
     font-family: sans-serif;
 }
 
+.button {
+    background-color: rgb(22, 66, 209);
+    color: #ffffff;
+}
+
 .input {
- text-align: center;
- margin: 100px;
-}
-
-input[type="text"] {
-    color: white;
-    height: 50px;
-    width: 600px;
-    background: grey;
-    font-family: sans-serif;
-    font-weight: bold;
+    text-align: left;;
     font-size: 20px;
-    border-radius: 2px;
-    padding: 10px 10px;
+    margin: 0px 0px 10px 20px;
+    width: 300px;
 }
 
-input[type="submit"] {
-    height: 50px;
-    width: 100px;
-    background: grey;
-    font-family: sans-serif;
-    font-weight: bold;
+aside ul {
+    padding: 10px;
+    margin: 0px;
+    width: 240px;
+    list-style: none;
     font-size: 20px;
-    border-radius: 2px;
+
+    
 }
 
+.container li {
+    border: 1px solid black;
+    margin-left: 10px;
+    padding: 10px;
+   
+    
+}
 .display {
     text-align: center;
+    
+    border: 1px solid black;
+    font-size: 20px;
+    font-weight: bold;
+
 }
