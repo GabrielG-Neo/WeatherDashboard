@@ -8,3 +8,4 @@ tempature, and wind speed will appear on the screen.
 https://gabrielg-neo.github.io/WeatherDashboard/
 
 ## Sneak Peak
+![Screenshot (17)](https://user-images.githubusercontent.com/70115497/99894748-11a38d80-2c4c-11eb-92ca-b13408305c29.png)
