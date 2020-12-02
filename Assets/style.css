@@ -1,52 +1,43 @@
 
-header {
+.container {
+    
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 1fr 1fr;
+    grid-template-areas: 
+    "weatherDash weatherDash weatherDash"
+    "citylist cityName cityName";
+}
+
+.weatherDash {
+    grid-area: weatherDash;
     font-size: 60px;
-    text-align: right;
+    text-align: center;
     margin: 20px;
     background-color: rgb(22, 66, 209);
     padding: 10px 50px;
     color: #ffffff;
-    
 }
-
-body {
-    font-family: sans-serif;
+.citylist {
+    grid-area: citylist;
+    display: flex wrap;
+    margin-left: 20px;
 }
-
-.button {
-    background-color: rgb(22, 66, 209);
-    color: #ffffff;
-}
-
-.input {
-    text-align: left;;
-    font-size: 20px;
-    margin: 0px 0px 10px 20px;
-    width: 300px;
-}
-
-aside ul {
+ .citylist li {
     padding: 10px;
-    margin: 0px;
     width: 240px;
     list-style: none;
     font-size: 20px;
-
-    
-}
-
-.container li {
-    border: 1px solid black;
-    margin-left: 10px;
-    padding: 10px;
-   
-    
-}
-.display {
+ }
+.cityName {
+    grid-area: cityName;
+    font-size: 40px;
+    font-family: sans-serif;
     text-align: center;
-    
-    border: 1px solid black;
-    font-size: 20px;
-    font-weight: bold;
-
+   
+}
+.button {
+    background-color: rgb(22, 66, 209);
+    color: #ffffff;
 }

@@ -7,34 +7,35 @@
     <title>What is the Weather like?</title>
     <link rel= "stylesheet" href= "./Assets/style.css">
 </head>
-<header class= "weatherDash">Weather Dashboard</header>
+
 
 <body>
-
-    <aside class= "citylist">
-        <h2>Search for your City:</h2>
-        <div class= "input">
-            <input type= "text" class= "inputValue" placeholder="Enter a City">
-            <input type= "submit" value= "Submit" class="button">
-       </div>
-       <div class= "container">
-        <ul>
-            <li>Austin</li>
-            <li>Dallas</li>
-            <li>Houston</li>
-            <li>Laredo</li>
-            <li>Lubbock</li>
-            <li>El Paso</li>
-        </ul> 
-        </div>
-
-    </aside>
-        <div class= "display">
+    <div class = "container">
+        <div class= "weatherDash">Weather Dashboard</div>
+            <div class= "citylist">
+                <h2>Search for your City:</h2>
+                <div class= "input">
+                    <input type= "text" class= "inputValue" placeholder="Enter a City">
+                    <input type= "submit" value= "Find" class="button">
+                </div>
+            <ul>
+                <li>Austin</li>
+                <li>Dallas</li>
+                <li>Houston</li>
+                <li>Laredo</li>
+                <li>Lubbock</li>
+                <li>El Paso</li>
+            </ul> 
+            </div>
+        <div class= "cityName">Current Weather
             <h1 class= "name"></h1>
             <p class= "desc"></p>
             <p class= "temp"></p>
             <p class= "wind"></p>
         </div>
+    </div>
+        
+          
 
 
     <script src="./Assets/script.js"></script>

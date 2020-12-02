@@ -6,17 +6,19 @@ var temp = document.querySelector(".temp");
 var wind = document.querySelector(".wind");
 
 button.addEventListener("click", function() {
-fetch("api.openweathermap.org/data/2.5/weather?q="+inputValue.value+"&appid=7bf549fe012f11d0d2b454d903e7e46a")
+fetch("https://api.openweathermap.org/data/2.5/weather?q="+inputValue.value+"&appid=7bf549fe012f11d0d2b454d903e7e46a")
         .then(response => response.json())
         .then(data => {
             var nameValue = data["name"];
-            var tempValue = data["main"]["feels_like", "humidity", "pressure","temp"];
+            var tempValue = data["main"]["temp", "feels_like","temp_min", "temp_max"];
             var descValue = data["weather"][0]["description"];
             var windValue = data["wind"]["speed"];
-            console.log(data);
+            
             name.innerHTML = nameValue;
-            temp.innerHTML = tempValue;
-            desc.innerHTML = descValue;
-            wind.innerHTML = windValue;
+            desc.innerHTML = "Clouds: " +descValue;
+            temp.innerHTML = "Tempature: " +tempValue;
+            wind.innerHTML = "Winds: " +windValue;
+            console.log(data);
         })
     });
+
