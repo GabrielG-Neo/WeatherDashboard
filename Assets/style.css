@@ -21,14 +21,18 @@
 }
 .citylist {
     grid-area: citylist;
-    display: flex wrap;
     margin-left: 20px;
 }
- .citylist li {
+ .citylist ul {
     padding: 10px;
-    width: 240px;
+    width: 200px;
     list-style: none;
     font-size: 20px;
+ }
+ .citylist li {
+    padding: 10px;
+    height: 30px;
+    border: 1px solid black;
  }
 .cityName {
     grid-area: cityName;
